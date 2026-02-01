@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login Test</title>
+    <style>
+        body{
+            background-color: #FAF3E1;
+        }
+        h1{
+            color: #222222;
+            text-align: center;
+        }
+
+                #btn:hover{
+cursor: pointer;
+height: 36px;
+width: 123px;
+        }
+
+#createbox{
+    width: 400px;
+height: 400px;
+    background-color: #F5E7C6;
+    display: flex;
+flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 500px;
+    margin-top: 120px;
+    border-radius: 10%;
+}
+
+#name{
+    height: 30px;
+    width: 230px;
+    border-radius: 80px;
+    border: 3px solid #FAF3E1;
+}
+
+#password{
+    height: 30px;
+    width: 230px;
+    border-radius: 80px;
+    border: 3px solid #FAF3E1;
+}
+
+#email{
+    height: 30px;
+    width: 230px;
+    border-radius: 80px;
+    border: 3px solid #FAF3E1;
+}
+#number{
+    height: 30px;
+    width: 230px;
+    border-radius: 80px;
+    border: 3px solid #FAF3E1;
+}
+#btn{
+   height: 34px;
+    width: 120px;
+    border-radius: 80px;
+    border: 3px solid #FAF3E1;
+    background-color: #FA8112;
+    color: white;
+} 
+
+a{
+color: black;
+}
+
+    </style>
+</head>
+<body>
+<h1>Create Acount</h1>
+
+<form id="my_form">
+    <div id="createbox">
+
+        <input type="text" placeholder ="Enter your name" id="name">
+
+<br>
+<input type="password" placeholder ="Enter your password" id="password">
+
+<br>
+<input type="text" placeholder ="Enter your e-mail" id="email">
+
+<br>
+<input type="number" placeholder ="Enter your number" id="number">
+
+<br>
+
+<button id="btn">Create Acount</button>
+
+<br>
+
+<a href="login.html">already have an acount</a>
+</div>
+
+</form>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>

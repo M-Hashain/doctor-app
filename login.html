@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #FAF3E1; 
+        }
+#loginmain{
+    width: 400px;
+height: 400px;
+    background-color: #F5E7C6;
+    display: flex;
+flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 500px;
+    margin-top: 120px;
+    border-radius: 10%;
+}
+h1{
+    text-align: center;
+    
+}
+
+#login_mail{
+    height: 30px;
+    width: 230px;
+    border-radius: 80px;
+    border: 3px solid #FAF3E1;
+
+}
+
+#login_pass{
+    height: 30px;
+    width: 230px;
+    border-radius: 80px;
+    border: 3px solid #FAF3E1;
+
+}
+#login_btn{
+      height: 30px;
+    width: 70px;
+    border-radius: 80px;
+    border: 3px solid #F5E7C6;
+    background-color: #FA8112;
+}
+       #login_btn:hover{
+cursor: pointer;
+height: 32px;
+width: 80px;
+        }
+
+        a{
+   color: black;
+}
+
+
+    </style>
+</head>
+<body>
+    <h1>Login Acount</h1>
+<form id="login_form">
+
+    <div id="loginmain">
+    <input type="text" placeholder="Enter your e-mail" id="login_mail">
+
+<br>
+    <input type="password" placeholder="Enter your password" id="login_pass">
+    
+    <br>
+<button id="login_btn">Enter</button>
+
+<br>
+<a href="create.html">Dont have any acount</a>
+
+</div>
+    </form>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>

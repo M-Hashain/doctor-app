@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #FAF3E1;
+        }
+#formmain{
+width: 400px;
+height: 400px;
+    background-color: #F5E7C6;
+    display: flex;
+flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 500px;
+    margin-top: 120px;
+    border-radius: 10%;
+}
+        #formbtn:hover{
+cursor: pointer;
+height: 37px;
+width: 90px;
+        }
+h1{
+    text-align: center;
+     color: #222222;
+}
+#ap-name{
+    height: 30px;
+    width: 230px;
+    border-radius: 80px;
+    border: 3px solid #FAF3E1;
+
+}
+#time{
+    height: 30px;
+    width: 230px;
+    border-radius: 80px;
+    border: 3px solid #FAF3E1;
+}
+#dropdown{
+    height: 30px;
+    width: 230px;
+    border-radius: 80px;
+    border: 3px solid #FAF3E1;
+
+}
+#description{
+    height: 30px;
+    width: 250px;
+    border-radius: 80px;
+    border: 3px solid #FAF3E1;
+}
+
+#formbtn{
+
+    height: 30px;
+    width: 70px;
+    border-radius: 80px;
+    border: 3px solid #F5E7C6;
+    background-color: #FA8112;
+}
+
+#slip{
+    width: 350px;
+height: 400px;
+    background-color: #F5E7C6;
+    display: flex;
+flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 500px;
+    margin-top: 120px;
+    border-radius: 10%;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Appoinment Form</h1>
+
+    <form id="appoinmentform">
+
+        <div id="formmain">
+
+
+
+<input type="name" placeholder="Enter your name" id="ap-name">
+<br>
+
+<input type="text" placeholder="Enter you booking time" id="time">
+<br>
+
+<select id="dropdown">
+    <option>--  Select a Doctor  --</option>
+    <option value="doctor-ali">--  Doctor-Ali  --</option>
+    <option value="doctor-farooq">--  Doctor-Farooq  --</option>
+    <option value="doctor-Maryam">--  Doctor-Maryam  --</option>
+</select>
+
+<br>
+<textarea id="description">What is your Reason for Visit:
+    
+</textarea>
+
+<br>
+<button id="formbtn">Submit</button>
+</div>
+
+
+    </form>
+
+    <hr>
+
+    <div id="slip">
+<h1 id="slip_hd">Appointment Slip</h1>
+<p>plz first fill the form</p>
+    </div>
+    <button id="cancelbtn" style="display: none;">Cancel Appoinment</button>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="app.js"></script>
+</body>
+</html>
